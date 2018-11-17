@@ -1,4 +1,6 @@
 # General Description of SeWaS
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fwkirschenmann%2FSeWaS.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fwkirschenmann%2FSeWaS?ref=badge_shield)
+
 This document gives an overview of [SeWaS](https://github.com/aneoconsulting/SeWaS), a modern production-class Seismic Wave Simulator. This simulator is built from scratch using C++14 and makes extensive use of state-of-the-art libraries such as [Eigen](http://eigen.tuxfamily.org/index.php?title=Main_Page) and [Boost](http://www.boost.org/). In addition, it embeds advanced techniques for developing HPC applications on top of emerging architectures, such as cache-blocking and vectorization. In the following, we give a macroscopic description of the underlying algorithm, data structures and the parallelization scheme.
 
 # User Interface
@@ -428,3 +430,7 @@ For example on 8 nodes, the application is launched as following:
 ```sh
 mpirun -n 8 -pernode ./sewas --cx 40 --cy 40 --cz 100 --P 2 --Q 4 --R 1 --nthreads=64 --dfile=../data/input/TestB.json
 ```
+
+
+## License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fwkirschenmann%2FSeWaS.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fwkirschenmann%2FSeWaS?ref=badge_large)
